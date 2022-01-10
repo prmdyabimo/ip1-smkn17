@@ -588,6 +588,7 @@ footer {
     display: inline;
     right: 0%;
     top: 0%;
+    
     padding-top: 12px;
     width: 25%;
 }
@@ -625,6 +626,7 @@ footer {
 .share {
     position: relative;
     margin-left: 38%;
+    display: none;
     padding:10px 0;
 }
 
@@ -648,6 +650,9 @@ footer {
         padding-top: 200px;
         color: white;
         font-size: 70px;
+    }
+    .share {
+        display: flex;
     }
     .footer {
         width: 100%;
