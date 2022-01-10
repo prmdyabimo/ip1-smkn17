@@ -118,6 +118,13 @@ window.addEventListener("scroll", function () {
 })
 
 
+window.addEventListener("scroll", function () {
+    const header1 = document.querySelector(".header1");
+    header1.classList.toggle("hilang", window.scrollY > 0);
+})
+
+
+
 // scroll to top
 const toTop = document.querySelector('.to-top');
 
@@ -126,5 +133,17 @@ window.addEventListener('scroll', () => {
         toTop.classList.add("on");
     } else {
         toTop.classList.remove("on");
+    }
+}) 
+
+
+// navbar hilang
+const hilang = document.querySelector('.header1');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset < 100) {
+        hilang.classList.remove("muncul");
+    } else {
+        hilang.classList.add("muncul");
     }
 }) 
