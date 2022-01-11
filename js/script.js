@@ -147,3 +147,20 @@ window.addEventListener('scroll', () => {
         hilang.classList.add("muncul");
     }
 }) 
+
+
+// testimoni
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 35,
+        stretch: 5,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true, 
+});
