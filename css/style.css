@@ -4,6 +4,7 @@
     --secondary-bg-color: #fff;
     --primary-text-color: #666;
     --secondary-text-color: #999;
+    --three-text-color: #17285B;
 }
 
 
@@ -94,7 +95,7 @@ a {
     width: 100%;
     height: 80px;
     z-index: -999;
-    background: gray;
+    background: #17285b;
     /* border-top-left-radius: 15px;
     border-bottom-right-radius: 15px; */
     transition: all .2s;
@@ -1222,7 +1223,9 @@ footer {
 }
 
 .footer-left img {
-    width: 40%;
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .footer-right .features h2 {
