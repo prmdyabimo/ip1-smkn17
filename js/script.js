@@ -118,6 +118,13 @@ window.addEventListener("scroll", function () {
 })
 
 
+window.addEventListener("scroll", function () {
+    const header1 = document.querySelector(".header1");
+    header1.classList.toggle("hilang", window.scrollY > 0);
+})
+
+
+
 // scroll to top
 const toTop = document.querySelector('.to-top');
 
@@ -128,3 +135,44 @@ window.addEventListener('scroll', () => {
         toTop.classList.remove("on");
     }
 }) 
+
+
+// navbar hilang
+const hilang = document.querySelector('.header1');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset < 100) {
+        hilang.classList.remove("muncul");
+    } else {
+        hilang.classList.add("muncul");
+    }
+}) 
+
+
+// testimoni
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 35,
+        stretch: 5,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true, 
+});
+
+// add loading
+// const loader = document.getElementById("preloader");
+
+// window.addEventListener("load", function() {
+// 	loader.style.timer = 2000;
+// 	loader.style.display = "none";
+// })
+
+
+
+
