@@ -64,7 +64,7 @@
         })
 
 // slide image
-const myslide = document.querySelectorAll('.myslider');
+const myslide = document.querySelectorAll('.myslider', '.mySwiper');
 const dot = document.querySelectorAll('.dot');
 
 let counter = 1;
@@ -150,17 +150,54 @@ window.addEventListener('scroll', () => {
 
 
 // testimoni
+// slide testimonial
 var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-        rotate: 35,
-        stretch: 5,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-    },
-    loop: true, 
-});
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        ]);
+        });
+    document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+        );
+        });
+    document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+        );
+        });
+    document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        ]);
+        });
