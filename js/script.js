@@ -156,11 +156,19 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
+<<<<<<< HEAD
         rotate: 0,
+=======
+        rotate: 35,
+>>>>>>> c2dcb69bac04028655039310aa7a8ab5aea8ad1f
         stretch: 5,
         depth: 100,
         modifier: 1,
         slideShadows: true,
     },
     loop: true, 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> c2dcb69bac04028655039310aa7a8ab5aea8ad1f
