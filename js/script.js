@@ -64,7 +64,7 @@
         })
 
 // slide image
-const myslide = document.querySelectorAll('.myslider');
+const myslide = document.querySelectorAll('.myslider', '.testimoni');
 const dot = document.querySelectorAll('.dot');
 
 let counter = 1;
@@ -156,7 +156,7 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-        rotate: 35,
+        rotate: 0,
         stretch: 5,
         depth: 100,
         modifier: 1,
@@ -164,15 +164,3 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true, 
 });
-
-// add loading
-// const loader = document.getElementById("preloader");
-
-// window.addEventListener("load", function() {
-// 	loader.style.timer = 2000;
-// 	loader.style.display = "none";
-// })
-
-
-
-

@@ -414,6 +414,12 @@ a {
     color: #ffffff;
     transition: 0.1s;
     user-select: none;
+	z-index: 99999;
+}
+
+.testimoni .next, .prev {
+	top: 70%;
+    user-select: none;
 }
 
 .prev:hover,
@@ -821,6 +827,7 @@ section .testimoni {
     /* min-height: 300px; */
     /* background: #fff; */
 }
+
 
 .testimoni .card1 .imgBx img {
     width: 100px;
