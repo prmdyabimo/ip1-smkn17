@@ -201,3 +201,46 @@ var swiper = new Swiper(".mySwiper", {
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
         ]);
         });
+
+// const btn = document.querySelectorAll('btn');
+// const slider9 = document.getElementById('#slider7');
+
+// btn[0].onclick = function() {
+// 	slider9.style.transform = "translate(0px)";
+// }
+
+// btn[1].onclick = function() {
+// 	slider9.style.transform = "translate(-800px)";
+// }
+
+// btn[2].onclick = function() {
+// 	slider9.style.transform = "translate(-1600px)";
+// }
+
+// btn[3].onclick = function() {
+// 	slider9.style.transform = "translate(-2400px)";
+// }
+
+// btn[4].onclick = function() {
+// 	slider9.style.transform = "translate(-3200px)";
+// }
+
+
+// slick slider js
+
+// dibawah slider gambar
+function openCity(cityName) {
+	var i;
+	var x = document.getElementsByClassName("city");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	document.getElementById(cityName).style.display = "block";  
+}
+
+
+
+
+
+
+
