@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Area l Ip1.co.id</title>
+    <script src="https://kit.fontawesome.com/3cca8bd524.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* Cek Area */
+
+    #cek-area{
+        background-color:#F47B20 ;
+        font-family: 'roboto',sans-serif;
+    }
+    .cekarea-ca{
+        width: 100%;
+        height: 573px;
+        background: url(img/bg-ca.png);
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        display: flex;
+        justify-content: right;
+    }
+    .cekarea-ca .center-ca {
+        display: flex;
+        align-items: center;
+        height: 673px;
+    }
+    .cekarea-ca .center-ca .searchbox-ca{
+        background: white;
+        padding: 25px 25px 40px;
+        border-radius: 15px;
+        margin-right: 30px;
+    }
+    .cekarea-ca .center-ca .searchbox-ca h1{
+        margin-bottom: 40px;
+    }
+    .cekarea-ca .center-ca .searchbox-ca h4{
+        font-size: 15px;
+    }
+    .cekarea-ca .center-ca .searchbox-ca h5{
+        font-size: 11px;
+    }
+
+
+    /* search bar css */
+    .searchbox-ca .searchbar-ca{
+        position: relative;
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+
+    .searchbox-ca .searchbar-ca .search-ca{
+        border: 4px solid #F47B20;
+        border-right: none;
+        font-size: 15px;
+        /* font-weight:bold; */
+        padding: 5px;
+        height: 45px;
+        width: 570px;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+    }
+    .searchbox-ca .searchbar-ca .search-ca:focus{
+        color: black;
+        box-shadow: 0 0 5px #F47B20;
+    }
+
+    .searchbox-ca .searchbar-ca .search-btn{
+        width: 60px;
+        height: 45px;
+        border: 1px solid #F47B20;
+        background:#F47B20;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    /* end search area */
+
+    /* Map Cek Area */
+
+    .map-container{
+        font-family: 'roboto',sans-serif;
+        background:#011c39 ;
+        border-radius: 20px 20px 0 0;
+        margin-top: -20px;
+        height: 600px;
+        display: flex;
+        flex-direction: column  ;
+    }
+    .map-container .text-map{
+        display: flex;
+        justify-content: center;
+    }
+    .map-container .text-map h1{
+        color: #fff;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+    
+    /* map css */
+    .map-container .map-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .map-container .map-wrapper .map-ca{
+        background-color: #fff;
+        width: 600px;
+        height: 400px;
+    }
+</style>
+<body>
+
+    <!-- Cek Area -->
+
+    <section id="cek-area">
+        <div class="cekarea-ca">
+            <div class="center-ca">
+                <div class="searchbox-ca">
+                    <h1>Cek Area & Langganan Segera!</h1>
+                    <h4>Ketik Kata Kunci Alamat Anda</h4>
+                    <div class="searchbar-ca">
+                        <input type="text" class="search-ca" placeholder="Cari alamat atau lokasi">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <h5>Masukkan minimal 2 kata untuk hasil pencarian yang akurat: Nama Jalan / Nomor / Apartemen / Komplek / Kelurahan / Kode Pos / Kota.</h5>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- cek Area -->
+
+    <section id="map-cek-area">        
+        <div class="map-container">
+            <div class="text-map">                
+                <h1>Coverage Area</h1>
+            </div>
+            <div class="map-wrapper">                
+                <div class="map-ca">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
