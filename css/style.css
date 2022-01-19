@@ -642,14 +642,16 @@ main {
 	text-align: center;
 	padding: 60px;
 	font-size: 60px;
+	font-weight: 600;
 	color: #ffffff;
 }
 
-.txt2 {
+.txt2 h2{
 	text-align: center;
 	padding: 60px;
 	font-size: 40px;
 	color: #ffffff;
+	font-weight: 600;
 }
 
 .paragraf {
@@ -780,7 +782,7 @@ main {
 /* price plans */
 
 /* responsive product */
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
 	.row {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -794,13 +796,14 @@ main {
 .row {
 	display: flex;
 	justify-content: center;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 	/* overflow-y: hidden; */
 	/* margin: 0 10px; */
 }
 
 .container2 h1 {
 	text-align: center;
+	font-weight: 600;
 	padding: 60px;
 	font-size: 40px;
 	color: #ffffff;
@@ -916,7 +919,7 @@ main {
 
 .swiper {
 	width: 100%;
-	height: 500px;
+	height: 600px;
 	margin: 0px auto;
 	background-color: rebeccapurple;
 }
@@ -1044,11 +1047,12 @@ main {
 	font-size: 17px;
 	text-align: center;
 	line-height: 23px;
+	margin: 0px 30px;
 }
 
 .box7 .img7 {
-	width: 105px;
-	height: 105px;
+	width: 108px;
+	height: 110px;
 	/* margin: -40px; */
 	border: 2px solid white;
 	border-radius: 50%;
@@ -1063,17 +1067,18 @@ main {
 }
 
 .box7 .img7 img {
-	width: 90px;
-	height: 90px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	/* margin-top: 100px; */
 }
 
-.text7 {
+.text7 h2 {
 	text-align: center;
-	font-size: 40px;
-	/* margin-top: 100px; */
-	padding-top: 10px;
+	font-size: 50px;
+	/* margin-top: 40px; */
+	padding-top: 40px;
+	font-weight: 600;
 }
 
 /* responsive */
@@ -1097,7 +1102,7 @@ main {
 		margin-top: 20px;
 	}
 	.box7 .img7 {
-		margin-top: -50px;
+		margin-top: -100px;
 	}
 	.box7 h4 {
 		padding-bottom: 10px;
@@ -1146,22 +1151,29 @@ main {
 
 /* clients */
 .slider9 {
-	background-color: red;
+	background-color: #fff;
 	width: 100%;
-	height: 100vh;
-	display: flex;
+	height: 70vh;
+	/* display: flex; */
 	justify-content: center;
 	align-items: center;
 }
 
+.slider9 > .client h2 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	margin: 30px;
+}
+
 .slider0 {
-	background-color: white;
-	width: 960px;
-	height: 100px;
+	background-color: #fff;
+	width: 1500px;
+	height: 250px;
 	overflow: hidden;
 	position: relative;
 	margin: auto;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.6);
 }
 
 .slider0::before,
@@ -1192,9 +1204,10 @@ main {
 }
 
 .slider0 .slider10 img {
-	width: 250px;
-	height: 100px;
-	margin: 10px ;
+	width: 240px;
+	height: 150px;
+	text-align: center;
+	margin: 50px 50px;
 }
 
 @keyframes scroll0 {
@@ -1206,7 +1219,19 @@ main {
 	}
 }
 
+/* responsive */
+@media (max-width: 1300px) {
+	.slider9 {
+		height: 50vh;
+	}
+}
 
+
+@media (max-width: 428px) {
+	.slider9 {
+		height: 50vh;
+	}
+}
 
 
 
@@ -1220,12 +1245,15 @@ main {
 	padding-bottom: 80px;
 }
 
-
+.container3 h3 {
+	font-weight: 600;
+}
 
 .container3 .title {
 	text-align: center;
 	color: var(--primary-text-color);
 	font-size: 50px;
+	font-weight: 600;
 	padding: 15px 0;
 	text-transform: uppercase;
 }
@@ -1234,7 +1262,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	/* flex-wrap: wrap; */
-	gap: 15px;
+	gap: 20px;
 }
 
 .container3 .box-container3 .grid4,
