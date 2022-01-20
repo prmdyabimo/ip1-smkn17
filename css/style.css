@@ -600,17 +600,18 @@ a {
     }
 } */
 
+
+
 /* pilihan product */
 
-.pilihan {
-	margin: 30px 30px;
-}
 
 .w3-bar {
 	background: #F57B20;
-	min-width: 100%;
+	margin: 30px 335px;
+	width: 50%;
+	/* margin-left: 335px; */
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	border-radius: 20px;
 }
@@ -622,8 +623,28 @@ a {
 }
 
 
+.harga .container2-price2 h1 {
+	color: black;
+	margin: -50px auto;
+}
 
 
+@media (max-width: 428px) {
+	.w3-bar {
+		width: 380px;
+		margin: auto;
+	}
+}
+
+@media (width: 800px) {
+	.w3-bar {
+		margin: auto;
+		width: 450px;
+	}
+}
+
+
+/* pilihan product */
 
 
 
