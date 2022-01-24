@@ -1,4 +1,3 @@
-
 /* Cek Area */
 *{
     margin: 0;
@@ -13,7 +12,7 @@
 .cekarea-ca{
     width: 100%;
     height: 573px;
-    background: url(img/bg-ca.png);
+    background: url(../img/bg-ca.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
