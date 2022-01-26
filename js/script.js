@@ -64,7 +64,7 @@
         })
 
 // slide image
-const myslide = document.querySelectorAll('.myslider', '.mySwiper');
+const myslide = document.querySelectorAll('.carousel-inner');
 const dot = document.querySelectorAll('.dot');
 
 let counter = 1;
@@ -237,10 +237,4 @@ function openCity(cityName) {
 	}
 	document.getElementById(cityName).style.display = "block";  
 }
-
-
-
-
-
-
 
