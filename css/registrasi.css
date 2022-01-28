@@ -1,0 +1,106 @@
+
+*	{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #17285b, #F57B20);
+}
+
+#container {
+	position: relative;
+	width: 500px;
+	min-height: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#container h2 {
+	position: relative;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+#container h2::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 140px;
+	height: 4px;
+	background: #ffffff;
+}
+
+/* #container form .inputbox {
+	width: 100%;
+	margin-top: 20px;
+} */
+
+#container .input1 .name {
+	width: 49.4%;
+}
+
+#container .input1 input {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+#container form input::placeholder {
+	color: #ffffff;
+}
+
+#container .input1 input[type="submit"] {
+	background: #ffffff;
+	padding-right: 90px;
+	color: #666;
+	width: 100px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+#container p {
+	margin-top: 5px;
+	color: #ffffff;
+}
+
+#container p a {
+	color: #ffffff;
+	font-weight: 600;
+}
+
