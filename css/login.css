@@ -117,7 +117,7 @@ section .color:nth-child(3) {
     position: relative;
     width: 400px;
     min-height: 400px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -185,7 +185,8 @@ section .color:nth-child(3) {
     color: #666;
     width: 100px;
     cursor: pointer;
-    margin-bottom: 20px;
+		margin: 20px 104px;
+    /* margin-bottom: 20px; */
     font-weight: 600;
 }
 
@@ -198,3 +199,17 @@ section .color:nth-child(3) {
     color: #ffffff;
     font-weight: 600;
 }
+
+@media (max-width: 800px) {
+	.form .inputbox input[type="submit"] {
+		margin: 20px 110px;
+	}
+}
+
+@media (max-width: 468px) {
+	.form .inputbox input[type="submit"] {
+		margin: 20px 106px;
+	}
+}
+
+
