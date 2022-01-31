@@ -22,7 +22,7 @@ section {
 	position: relative;
 	width: 500px;
 	min-height: 400px;
-	padding: 40px;
+	padding: 50px 50px;
 	background: rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
 	display: flex;
@@ -60,7 +60,7 @@ section {
 } */
 
 #container .input1 .name {
-	width: 49.4%;
+	width: 49%;
 }
 
 #container .input1 input {
@@ -69,6 +69,7 @@ section {
 	border: none;
 	outline: none;
 	padding: 10px 20px;
+	/* margin: 20px 20px; */
 	margin-top: 20px;
 	border-radius: 35px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
@@ -87,10 +88,12 @@ section {
 #container .input1 input[type="submit"] {
 	background: #ffffff;
 	padding-right: 90px;
+	/* margin-right: 160px; */
 	color: #666;
 	width: 100px;
 	cursor: pointer;
-	margin-bottom: 20px;
+	margin: 20px 160px;
+	/* margin-bottom: 20px; */
 	font-weight: 600;
 }
 
@@ -104,3 +107,22 @@ section {
 	font-weight: 600;
 }
 
+@media (max-width: 468px) {
+	#container h2 {
+		margin-left: 40px;
+	}
+	#container p {
+		margin-left: 40px;
+	}
+	#container .input1 input{
+		width: 85%;
+		margin-left: 30px;
+		/* margin-right: 10px; */
+	}
+	#container {
+		width: 540px;
+	}
+	#container .input1 .name {
+		width: 85%;
+	}
+}
