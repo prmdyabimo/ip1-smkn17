@@ -193,6 +193,7 @@ section .color:nth-child(3) {
 .forget {
     margin-top: 5px;
     color: #ffffff;
+		text-align: center;
 }
 
 .forget a {
