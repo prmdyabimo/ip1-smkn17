@@ -100,6 +100,7 @@ section {
 #container p {
 	margin-top: 5px;
 	color: #ffffff;
+	text-align: center;
 }
 
 #container p a {
@@ -107,12 +108,13 @@ section {
 	font-weight: 600;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 428px) {
 	#container h2 {
 		margin-left: 40px;
 	}
 	#container p {
 		margin-left: 40px;
+		padding-right: 50px; 
 	}
 	#container .input1 input{
 		width: 85%;
