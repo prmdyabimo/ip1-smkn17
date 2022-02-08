@@ -157,7 +157,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         pagination: {
         el: ".swiper-pagination",
-        type: "fraction",
+        // type: "fraction",
         },
         navigation: {
         nextEl: ".swiper-button-next",
@@ -200,7 +200,9 @@ var swiper = new Swiper(".mySwiper", {
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
         ]);
-        });
+				});
+				
+	
 
 // const btn = document.querySelectorAll('btn');
 // const slider9 = document.getElementById('#slider7');
@@ -237,4 +239,5 @@ function openCity(cityName) {
 	}
 	document.getElementById(cityName).style.display = "block";  
 }
+
 
