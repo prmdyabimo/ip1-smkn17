@@ -1706,6 +1706,7 @@ h4 {
 	}
 }
 
+/* footer start */
 
 #footer {
 	font-family: 'roboto', sans-serif;
@@ -1775,8 +1776,17 @@ footer {
 	margin-right: 1.25em;
 }
 
+
 .box a {
 	color: #999;
+}
+.box a:active{
+    transition: 0.1s;
+    filter:opacity(100%);
+    font-size: 16px;
+}
+.box a:hover{
+    color: #b3b2b2;
 }
 
 .footer-bottom {
@@ -1820,7 +1830,7 @@ footer {
 		margin-top: 30px;
 		padding-left: 20px;
 	}
-
+	
 	.footer-right {
 		display: flex;
 		justify-content: center;
@@ -1829,6 +1839,9 @@ footer {
 	.footer-right .features {
 		max-width: 35%;
 		text-align: center;
+	}
+	.footer-right .features h2{
+		margin-bottom: 3px;
 	}
 
 	.footer-right .features h2 {
