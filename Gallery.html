@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery l IP1.co.id</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3cca8bd524.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        #Gallery-gl{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150vh;
+            background:linear-gradient(-315deg, #ffffff 0%, #e7e7e7 74%);
+        }
+
+        .container-gl{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1100px;            
+        }
+
+        .container-gl .card{
+            position: relative;
+            width: 330px;
+            height: 350px;
+            margin: 15px;
+            overflow: hidden;
+            
+        }
+        .container-gl .card .imgbox,
+        .container-gl .card .content-box        
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container-gl .card .buttonbox-gl{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            padding-top:30% ;
+            width: 100%;
+            height: 100%; 
+        }
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl{
+            height: 15%;
+            width: 30%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            transform: scaleX(0);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: top;
+            
+        }
+
+        .container-gl .card:hover .buttonbox-gl .buttonwrap-gl{
+            transform: scaleX(1);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: top;
+        }
+
+        .container-gl .card:hover .buttonbox-gl .buttonwrap-gl .btn-gl a{
+            /* z-index: 1; */
+        }
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl
+        {
+            text-decoration: none;
+            width: 50%;
+            height: 100%;
+            /* background: yellow; */
+        }
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl a{
+            text-decoration: none;
+        }
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl,
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click2-gl
+        {
+            width: 100%;
+            height: 100%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl{
+            background-color: rgb(218, 218, 218);
+            color: #000;
+        }
+
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click2-gl{
+            background-color: skyblue;
+            color: #fff;
+        }
+
+        .container-gl .card .content-box::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 25%;
+            background-color: #00000060;
+            transform: scaleX(0);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: right;
+        }
+
+        .container-gl .card:hover .content-box::before{
+            transform: scaleX(1);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: left;
+        }
+
+        .container-gl .card .content-box .content-gl{
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            padding: 30px;
+            padding-bottom: 0;
+            z-index: 1;
+            transition: 0.5s;
+            transform: translate(-300px);
+        }
+
+        .container-gl .card:hover .content-box .content-gl{
+            transform: translateX(0px);
+        }
+
+        .container-gl .card .content-box .content-gl h2{
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .container-gl .card .content-box .content-gl p{
+            font-size: 0.9em;
+            line-height: 1em;
+            font-weight: 300;
+            color: #fff;
+        }
+        
+        
+
+        /* selesai */
+    </style>
+</head>
+
+<body>
+    <section id="Gallery-gl">
+        <div class="container-gl">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image1.jpg" alt="image1">
+                </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click1-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image2.jpg" alt="image2">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image3.jpg" alt="image3">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image4.jpg" alt="image4">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image5.jpg" alt="image5">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image6.jpg" alt="image6">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image7.jpg" alt="image7">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image8.jpg" alt="image8">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbox">
+                    <img src="../img/image9.jpg" alt="image9">
+                </div>
+                <div class="content-box">
+                    <div class="content-gl">
+                        <h2>Post Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
