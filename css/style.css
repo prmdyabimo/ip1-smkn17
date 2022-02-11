@@ -570,7 +570,7 @@ a {
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
     animation-duration: 40s; */
-}
+/* } */
 
 
 /* @-webkit-keyframes zoomin {
@@ -1889,7 +1889,8 @@ footer {
 	display: -o-flex;
 	display: flex;
 	flex-flow: row wrap;
-	padding: 50px;
+	/* padding: 50px; */
+	padding-bottom: 0;
 	color: #fff;
 	background-color: #011c39;
 	/* border-radius: 30px 30px 0px 0px; */
@@ -1901,6 +1902,7 @@ footer {
 
 .footer-left {
 	margin-right: 1.25em;
+	margin-left: 2em;
 	margin-bottom: 2em;
 }
 
@@ -1961,7 +1963,11 @@ footer {
 .footer-bottom {
 	text-align: center;
 	color: #999;
-	padding-top: 50px;
+	margin-top:35px ;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	background-color: rgb(0, 22, 43);
 }
 
 .footer-left p {
@@ -2021,7 +2027,6 @@ footer {
 }
 
 /* footer end */
-
 
 /* contact us start */
 
