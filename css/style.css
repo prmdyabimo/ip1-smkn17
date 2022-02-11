@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:ital@1&display=swap');
+
 
 :root {
 	--color: #F57B20;
@@ -12,7 +16,7 @@
 }
 
 
-/* background img */
+/* background  */
 
 .img-1 {
 	background-image: url(../img/foto1.png);
@@ -65,6 +69,8 @@ body.hidden-scrolling {
 	max-width: 1400px;
 	/* background-color: red; */
 	/* margin: auto; */
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 ul {
@@ -113,8 +119,10 @@ a {
 	color: #fff;
 	font-weight: 600;
 	float: right;
-	padding: 5px 25px;
+	padding: 10px 20px;
 	text-decoration: none;
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 .header1.hilang {
@@ -570,7 +578,7 @@ a {
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
     animation-duration: 40s; */
-/* } */
+}
 
 
 /* @-webkit-keyframes zoomin {
@@ -649,7 +657,7 @@ a {
 }
 
 .w3-bar button {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 3px;
 	color: #fff;
@@ -657,8 +665,15 @@ a {
 
 
 .harga .container2-price2 h1 {
-	color: #fff;
+	color: #F57B20;
 	margin: -50px auto;
+	text-align: center;
+	font-weight: 800;
+	padding: 60px;
+	font-size: 40px;
+	color: #F57B20;
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 
@@ -703,9 +718,10 @@ a {
 	text-align: center;
 	padding: 35px;
 	font-size: 40px;
-	color: #F57B20;
+	color: #fff;
 	font-weight: 800;
-	font-family: 'Oswald',sans-serif;
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 .paragraf {
@@ -763,14 +779,17 @@ a {
 	z-index: 10;
 }
 
-.card h1 {
+.card h2 {
 	font-size: 23px;
 	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
 	/* z-index: 100; */
 }
 
 .card p {
-	font-weight: bold;
+	font-weight: 200;
+	color: #000;
 }
 
 .card::before {
@@ -811,6 +830,7 @@ a {
 
 .card p {
 	padding: 10px;
+	font-weight: 400;
 }
 
 .card:hover {
@@ -929,14 +949,7 @@ a {
 	padding-bottom: 50px;
 }
 
-.container2 h1 {
-	text-align: center;
-	font-weight: 600;
-	padding: 60px;
-	font-size: 40px;
-	color: #ffffff;
-	font-family: 'Noto Sans',sans-serif;
-}
+
 
 .single-price {
 	background: #fff;
@@ -956,6 +969,7 @@ a {
 
 .price-head {
 	text-align: center;
+	font-weight: 400;
 	padding: 10px;
 	font-size: 25px;
 	color: #ffffff;
@@ -967,6 +981,7 @@ a {
 .price-body {
 	padding: 10px;
 	font-size: 20px;
+	font-weight: 400;
 	text-align: center;
 	padding: 30px;
 }
@@ -1113,8 +1128,12 @@ a {
 }
 
 .text7 {
-	font-size: 30px;
+	font-size: 40px;
 	color: #fff;
+	font-weight: 800;
+	font-family: 'Montserrat',
+	sans-serif;
+	margin-top: 10px;
 }
 
 .deskripsi,
@@ -1350,8 +1369,10 @@ h4 {
 .slider9>.client h2 {
 	text-align: center;
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 800;
 	margin: 30px;
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 .slider0 {
@@ -1448,98 +1469,10 @@ h4 {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
-	opacity: 0.5;
+  background: rgba(0, 0, 0, 0.9);
+	/* opacity: 0.5; */
 	background-size: cover;
 }
-
-.container3 .color {
-	position: absolute;
-}
-
-/* 1 */
-.container3 .color:nth-child(2) {
-	top: 155px;
-	left: 30px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-}
-
-.container3 .color:nth-child(3) {
-	top: 40px;
-	/* bottom: 100px; */
-	left: 140px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-	z-index: -1;
-}
-
-.container3 .color:nth-child(4) {
-	top: 40px;
-	left: 30px;
-	width: 100px;
-	height: 100px;
-	z-index: -1;
-	background: #fff;
-	opacity: 0.2;
-}
-
-.container3 .color:nth-child(5) {
-	top: 40px;
-	/* bottom: 100px; */
-	left: 250px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-	z-index: -1;
-}
-
-/* 2 */
-.container3 .color:nth-child(6) {
-	top: 155px;
-	right: 30px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-}
-
-.container3 .color:nth-child(7) {
-	top: 40px;
-	right: 30px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-	z-index: -1;
-}
-
-.container3 .color:nth-child(8) {
-	top: 40px;
-	right: 140px;
-	width: 100px;
-	height: 100px;
-	z-index: -1;
-	background: #fff;
-	opacity: 0.2;
-}
-
-.container3 .color:nth-child(9) {
-	top: 40px;
-	right: 250px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	opacity: 0.2;
-	z-index: -1;
-}
-
-
 
 .container3 h3 {
 	font-weight: 600;
@@ -1549,10 +1482,11 @@ h4 {
 	text-align: center;
 	color: #fff;
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 800;
 	margin-bottom: 20px;
 	padding: 30px 0;
-	text-transform: uppercase;
+	font-family: 'Montserrat',
+	sans-serif;
 }
 
 .container3 .box-container3 {
@@ -1575,9 +1509,9 @@ h4 {
 	text-align: center;
 	/* width: 300px; */
 	/* height: 60%; */
-	background: var(--secondary-bg-color);
+	/* background: var(--secondary-bg-color); */
 	padding: 20px 0;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	/* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
 	border-radius: 5px;
 	cursor: pointer;
 	position: relative;
@@ -1590,20 +1524,24 @@ h4 {
 	height: 80px;
 	width: 80px;
 	line-height: 80px;
-	background: rgba(0, 0, 0, 0.1);
+	/* background: rgba(0, 0, 0, 0.1); */
+	border: 3px solid #fff;
 	border-radius: 50%;
 	margin: 10px 0;
-	color: var(--primary-text-color);
+	color: #fff;
 }
 
 .container3 .box-container3 .box3 h3 {
-	font-size: 35px;
-	color: var(--primary-text-color);
+	font-size: 40px;
+	color: #fff;
+	padding-top: 10px;
 }
 
 .container3 .box-container3 .box3 p {
 	font-size: 18px;
-	color: var(--secondary-text-color);
+	color: #fff;
+	text-align: center;
+	font-weight: 200;
 	padding-bottom: 10px;
 }
 
@@ -1963,7 +1901,7 @@ footer {
 .footer-bottom {
 	text-align: center;
 	color: #999;
-	margin-top:35px ;
+	margin-top: 35px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
