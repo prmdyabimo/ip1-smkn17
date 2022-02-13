@@ -41,14 +41,22 @@
             overflow: hidden;
             
         }
-        .container-gl .card .imgbox,
-        .container-gl .card .content-box        
-        {
+        .container-gl .card .imgbox{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+        }
+        
+        .container-gl .card .content-box        
+        {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
             object-fit: cover;
         }
 
@@ -62,25 +70,25 @@
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl{
+            content: '';
             height: 15%;
             width: 30%;
             position: absolute;
             display: flex;
             justify-content: space-between;
-            transform: scaleX(0);
-            transition: transform 0.5s ease-in-out;
-            transform-origin: top;
-            
+            opacity: 0;
+            transform: translateY(-100px);
+            transition: 0.7s;
         }
 
         .container-gl .card:hover .buttonbox-gl .buttonwrap-gl{
-            transform: scaleX(1);
-            transition: transform 0.5s ease-in-out;
-            transform-origin: top;
-        }
-
-        .container-gl .card:hover .buttonbox-gl .buttonwrap-gl .btn-gl a{
-            /* z-index: 1; */
+            /* -webkit-animation: fadeInTop 0.9s both;
+            -moz-animation: fadeInTop 0.9s both;
+            -o-animation: fadeInTop 0.9s both;
+            animation: fadeInTop 0.9s both; */
+            transition: 0.7s ;
+            transform: translateY(0);
+            opacity: 1;
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl
@@ -89,6 +97,7 @@
             width: 50%;
             height: 100%;
             /* background: yellow; */
+            /* text-decoration: none; */
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl a{
@@ -106,7 +115,9 @@
             align-items: center;
         }
 
-        
+        /* .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .flip{
+            
+        } */
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl{
             background-color: rgb(218, 218, 218);
@@ -118,34 +129,37 @@
             color: #fff;
         }
 
+        
+
         .container-gl .card .content-box::before{
             content: '';
-            position: absolute;
+            position: absolute; 
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 25%;
+            height: 75%;
             background-color: #00000060;
             transform: scaleX(0);
             transition: transform 0.5s ease-in-out;
-            transform-origin: right;
+            transform-origin: left;
         }
 
         .container-gl .card:hover .content-box::before{
             transform: scaleX(1);
+            pointer-events: none;
             transition: transform 0.5s ease-in-out;
             transform-origin: left;
         }
 
         .container-gl .card .content-box .content-gl{
             position: absolute;
-            bottom: 5%;
+            bottom: 20%;
             left: 0;
-            padding: 30px;
+            padding-left: 20px;
             padding-bottom: 0;
-            z-index: 1;
+            /* z-index: 0; */
             transition: 0.5s;
-            transform: translate(-300px);
+            transform: translateX(-350px);
         }
 
         .container-gl .card:hover .content-box .content-gl{
@@ -173,6 +187,7 @@
 </head>
 
 <body>
+   
     <section id="Gallery-gl">
         <div class="container-gl">
             <div class="card">
@@ -181,17 +196,17 @@
                 </div>
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
-                        <div class="btn-gl">
-                            <a href="#">
-                                <div class="click1-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
-                                </div>                                
+                                </div>   
                             </a>
                         </div>
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl">
+                                <div class="click2-gl flip">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -210,6 +225,25 @@
                 <div class="imgbox">
                     <img src="../img/image2.jpg" alt="image2">
                 </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="content-box">
                     <div class="content-gl">
                         <h2>Post Title</h2>
@@ -221,6 +255,25 @@
             <div class="card">
                 <div class="imgbox">
                     <img src="../img/image3.jpg" alt="image3">
+                </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-box">
                     <div class="content-gl">
@@ -234,6 +287,25 @@
                 <div class="imgbox">
                     <img src="../img/image4.jpg" alt="image4">
                 </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="content-box">
                     <div class="content-gl">
                         <h2>Post Title</h2>
@@ -245,6 +317,25 @@
             <div class="card">
                 <div class="imgbox">
                     <img src="../img/image5.jpg" alt="image5">
+                </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-box">
                     <div class="content-gl">
@@ -258,6 +349,25 @@
                 <div class="imgbox">
                     <img src="../img/image6.jpg" alt="image6">
                 </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="content-box">
                     <div class="content-gl">
                         <h2>Post Title</h2>
@@ -269,6 +379,25 @@
             <div class="card">
                 <div class="imgbox">
                     <img src="../img/image7.jpg" alt="image7">
+                </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-box">
                     <div class="content-gl">
@@ -282,6 +411,25 @@
                 <div class="imgbox">
                     <img src="../img/image8.jpg" alt="image8">
                 </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="content-box">
                     <div class="content-gl">
                         <h2>Post Title</h2>
@@ -293,6 +441,25 @@
             <div class="card">
                 <div class="imgbox">
                     <img src="../img/image9.jpg" alt="image9">
+                </div>
+                <div class="buttonbox-gl">
+                    <div class="buttonwrap-gl">
+                        <div class="btn-gl" > 
+                            <a href="bootstrap.html">
+                                <div  class="click1-gl flip-gl">
+                                    <i class="fas fa-search"></i>
+                                </div>   
+                            </a>
+                        </div>
+                        
+                        <div class="btn-gl">
+                            <a href="#">
+                                <div class="click2-gl flip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>                                
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-box">
                     <div class="content-gl">
