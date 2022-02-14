@@ -638,7 +638,7 @@ a {
 /* !article */
 .article {
 	width: 40%;
-	height: 210vh;
+	height: 100%;
 	background: #fff;
 	display: flex;
 	margin-top: 50px;
@@ -646,12 +646,13 @@ a {
 
 /* !ARTICLE LEFT */
 .article-left {
-	margin: 100px 20px;
+	margin-top: 100px;
+	margin-left: 80px;
 }
 
 .box-left img {
-	width: 300px;
-	height: 200px;
+	width: 280px;
+	height: 180px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	cursor: pointer;
@@ -666,36 +667,32 @@ a {
 }
 
 .box-article {
-	width: 300px;
-	height: 600px;
+	width: 280px;
+	height: 100%;
 	background: gray;
-	margin: 5px;
 	border-radius: 10px;
 }
 
 .box-article-1 {
-	width: 300px;
-	height: 600px;
+	width: 280px;
+	height: 100%;
 	background: gray;
-	margin: 5px;
+	margin-left: 25px;
 	border-radius: 10px;
 }
 
 .box-article-2 {
-	width: 300px;
-	height: 600px;
+	width: 280px;
+	height: 100%;
 	background: gray;
-	margin: 5px;
+	margin-left: 25px;
 	border-radius: 10px;
 }
 
 .date-tag {
-	font-size: 13px;
-	padding-top: 30px;
-}
-
-.date-tag i {
-	padding: 5px 3px 10px 10px;
+	font-size: 11px;
+	text-align: center;
+	padding-top: 5px;
 }
 
 .date-tag a {
@@ -709,8 +706,8 @@ a {
 }
 
 .in-article h2 {
-	padding-top: 20px;
-	font-size: 23px;
+	padding-top: 10px;
+	font-size: 20px;
 	text-align: center;
 	font-weight: 800;
 }
@@ -733,12 +730,14 @@ a {
 
 .area-bot {
 	display: flex;
-	margin: 40px 10px;
+	margin: 20px 10px;
 }
 
 .area-bot input {
-	margin: auto 10px;
-	padding: 20px 25px;
+	/* margin: auto px; */
+	padding: 0px 5px;
+	height: 40px;
+	margin-right: 8px;
 	border: 2px solid #F57B20;
 	color: #F57B20;
 	border-radius: 7px;
@@ -749,14 +748,13 @@ a {
 	color: #fff;
 }
 
-.comment {
-	display: grid;
-	padding-top: 10px;
-}
 
 .comment a {
 	color: #b3b2b2;
 	text-decoration: none;
+	font-size: 12px;
+	/* text-align: center; */
+	padding: auto 5px;
 }
 
 .comment a:hover {
@@ -765,20 +763,24 @@ a {
 
 .comment a i {
 	color: #F57B20;
-	padding-right: 10px;
+	padding-top: 15px;
+	padding-right: 2px;
 }
+
 
 
 
 /* !ARTICLE-RIGHT */
 .article-right {
 	display: block;
-	margin: 110px 10px;
+	margin-top: 110px;
+	margin-left: 70px;
+	width: 235px;
 }
 
 .article-right h2 {
 	padding-bottom: 20px;
-	font-size: 40px;
+	font-size: 30px;
 	letter-spacing: 1px;
 	font-weight: 600;
 }
@@ -825,14 +827,13 @@ a {
 .categories {
 	display: flex;
 	border-bottom: 1px solid gray;
-	padding: 3px 0;
 }
 
 .categories a {
 	text-decoration: none;
 	color: #000;
-	padding-top: 10px;
-	font-size: 15px;
+	font-size: 14px;
+	padding-top: 20px;
 }
 
 .categories a:hover {
@@ -840,22 +841,24 @@ a {
 }
 
 .categories p {
-	padding-top: 10px;
-	padding-left: 230px;
+	/* padding-top: 10px; */
 	color: #F57B20;
+	margin-left: 130px;
+	padding-top: 20px;
 }
 
 /* ?recent post */
 
 .recent-post h2 {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .recent-post img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 10px;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 
 .recent-img img:hover {
@@ -864,17 +867,15 @@ a {
 
 .recent-img {
 	display: flex;
-	margin: 10px 0;
 }
 
 .txt {
-	font-size: 18px;
-	margin: 10px auto;
+	font-size: 15px;
+	margin: auto 10px;
 }
 
 .txt p {
 	color: #F57B20;
-	padding-top: 20px;
 }
 
 .txt a {
@@ -888,7 +889,7 @@ a {
 
 /* ?tags */
 .tags h2 {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .tags-1 {
@@ -905,9 +906,9 @@ a {
 }
 
 .tags-2 input {
-	width: 155px;
+	width: 105px;
 	margin-bottom: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
 	padding: 15px 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	border: none;
@@ -919,16 +920,43 @@ a {
 	padding: 15px 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	border: none;
+	margin-bottom: 100px;
 }
 
 .btnTags input {
 	font-size: 15px;
 	color: #F57B20;
+	padding: 10px;
 }
 
 .btnTags input:hover {
 	background-color: #F57B20;
 	color: #fff;
+}
+
+@media (max-width: 1280px) {
+	.article-right {
+		margin-left: 40px;
+	}
+	.article-left {
+		margin-left: 60px;
+	}
+}
+
+@media (max-width: 884px) {
+	.article {
+		display: block;
+	}
+	.box-left {
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		/* justify-content: center; */
+		align-items: center;
+	}
+	.box-article-2 {
+		margin-left: 0px;
+		margin-top: 50px;
+	}
 }
 
 /* !article */
