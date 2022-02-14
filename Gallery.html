@@ -16,6 +16,21 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
+        .judul-gl{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            margin-top: 30px;
+        }
+
+        .judul-gl p{
+            font-size: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         #Gallery-gl{
             display: flex;
             justify-content: center;
@@ -30,7 +45,8 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 1100px;            
+            max-width: 1100px; 
+            margin-top: 90px;           
         }
 
         .container-gl .card{
@@ -48,7 +64,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            background:white;
+            background-color: white;
         }
         
         .container-gl .card .content-box        
@@ -67,7 +83,7 @@
             justify-content: center;
             padding-top:30% ;
             width: 100%;
-            height: 100%; 
+            height: 100%;
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl{
@@ -79,7 +95,8 @@
             justify-content: space-between;
             opacity: 0;
             transform: translateY(-100px);
-            transition: 0.7s;
+            transition: 0.5s;
+            transition-delay: 0.1s;
         }
 
         .container-gl .card:hover .buttonbox-gl .buttonwrap-gl{
@@ -87,9 +104,10 @@
             -moz-animation: fadeInTop 0.9s both;
             -o-animation: fadeInTop 0.9s both;
             animation: fadeInTop 0.9s both; */
-            transition: 0.7s ;
+            transition: 0.5s ;
             transform: translateY(0);
             opacity: 1;
+            transition-delay: 0.1s;
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl
@@ -114,11 +132,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: 0.3s;
         }
-
-        /* .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .flip{
-            
-        } */
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl{
             background-color: rgb(218, 218, 218);
@@ -126,11 +141,22 @@
         }
 
         .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click2-gl{
-            background-color: skyblue;
+            background-color: #F47B20;
             color: #fff;
         }
 
-        
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl:hover .click1-gl{
+            transform: scaleX(-1) translateX(-1px);
+            transition: 0.4s;
+            background:#ff9d52;
+            color: white;
+        }
+        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl:hover .click2-gl{
+            transform: scaleX(-1) translateX(1px);
+            transition: 0.4s;
+            background-color: #fff;
+            color: #000;
+        }
 
         .container-gl .card .content-box::before{
             content: '';
@@ -141,14 +167,14 @@
             height: 75%;
             background-color: #00000060;
             transform: scaleX(0);
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.3s ease-in-out;
             transform-origin: left;
         }
 
         .container-gl .card:hover .content-box::before{
             transform: scaleX(1);
             pointer-events: none;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.3s ease-in-out;
             transform-origin: left;
         }
 
@@ -159,7 +185,7 @@
             padding-left: 20px;
             padding-bottom: 0;
             /* z-index: 0; */
-            transition: 0.5s;
+            transition: 0.3s;
             transform: translateX(-350px);
         }
 
@@ -182,13 +208,19 @@
         }
         
         
-
+        
         /* selesai */
     </style>
 </head>
 
 <body>
    
+    <section>
+        <div class="judul-gl">
+            <p>Gallery l Ip1.co.id</p> 
+        </div>
+    </section>
+
     <section id="Gallery-gl">
         <div class="container-gl">
             <div class="card">
@@ -198,7 +230,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -207,7 +239,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -229,7 +261,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -238,7 +270,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -260,7 +292,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -269,7 +301,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -291,7 +323,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -300,7 +332,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -322,7 +354,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -331,7 +363,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -353,7 +385,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -362,7 +394,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -384,7 +416,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -393,7 +425,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -415,7 +447,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -424,7 +456,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
@@ -446,7 +478,7 @@
                 <div class="buttonbox-gl">
                     <div class="buttonwrap-gl">
                         <div class="btn-gl" > 
-                            <a href="bootstrap.html">
+                            <a href="post-article.html">
                                 <div  class="click1-gl flip-gl">
                                     <i class="fas fa-search"></i>
                                 </div>   
@@ -455,7 +487,7 @@
                         
                         <div class="btn-gl">
                             <a href="#">
-                                <div class="click2-gl flip">
+                                <div class="click2-gl flip-gl">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>                                
                             </a>
