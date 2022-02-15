@@ -637,7 +637,7 @@ a {
 }
 /* !article */
 .article {
-	width: 40%;
+	width: 50%;
 	height: 100%;
 	background: #fff;
 	display: flex;
@@ -648,6 +648,8 @@ a {
 .article-left {
 	margin-top: 100px;
 	margin-left: 80px;
+	font-family: 'Oswald',
+	sans-serif;
 }
 
 .box-left img {
@@ -664,6 +666,7 @@ a {
 
 .box-left {
 	display: flex;
+	justify-content: center;
 }
 
 .box-article {
@@ -698,7 +701,7 @@ a {
 .date-tag a {
 	color: #fff;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .date-tag a:hover {
@@ -715,6 +718,7 @@ a {
 .in-article h2 a {
 	color: #000;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .in-article h2 a:hover {
@@ -735,12 +739,14 @@ a {
 
 .area-bot input {
 	/* margin: auto px; */
-	padding: 0px 5px;
+	margin-left: 10px;
+	padding: 0px 25px;
 	height: 40px;
 	margin-right: 8px;
 	border: 2px solid #F57B20;
 	color: #F57B20;
 	border-radius: 7px;
+	font-weight: 400;
 }
 
 .area-bot input:hover {
@@ -754,7 +760,8 @@ a {
 	text-decoration: none;
 	font-size: 12px;
 	/* text-align: center; */
-	padding: auto 5px;
+	padding: auto 20px;
+	font-weight: 300;
 }
 
 .comment a:hover {
@@ -764,7 +771,7 @@ a {
 .comment a i {
 	color: #F57B20;
 	padding-top: 15px;
-	padding-right: 2px;
+	padding-right: 4px;
 }
 
 
@@ -783,6 +790,7 @@ a {
 	font-size: 30px;
 	letter-spacing: 1px;
 	font-weight: 600;
+	font-family: 'Oswald',	sans-serif;
 }
 
 /* ?search */
@@ -797,6 +805,7 @@ a {
 	border: 4px solid #17285B;
 	padding: 0px 10px;
 	border-radius: 50px;
+	font-family: 'Oswald',sans-serif;
 }
 
 .search-container {
@@ -813,6 +822,8 @@ a {
 	border-radius: 50px;
 	font-size: 18px;
 	font-weight: 400;
+	font-family: 'Oswald',
+	sans-serif;
 }
 
 .inputSearch:focus {
@@ -834,6 +845,9 @@ a {
 	color: #000;
 	font-size: 14px;
 	padding-top: 20px;
+	font-family: 'Oswald',
+	sans-serif;
+	font-weight: 350;
 }
 
 .categories a:hover {
@@ -881,6 +895,9 @@ a {
 .txt a {
 	text-decoration: none;
 	color: #000;
+	font-family: 'Oswald',
+	sans-serif;
+	font-weight: 400;
 }
 
 .txt a:hover {
@@ -906,7 +923,7 @@ a {
 }
 
 .tags-2 input {
-	width: 105px;
+	width: 95px;
 	margin-bottom: 20px;
 	margin-right: 10px;
 	padding: 15px 0;
@@ -927,6 +944,9 @@ a {
 	font-size: 15px;
 	color: #F57B20;
 	padding: 10px;
+	font-family: 'Oswald',
+	sans-serif;
+	font-weight: 300;
 }
 
 .btnTags input:hover {
@@ -943,19 +963,48 @@ a {
 	}
 }
 
-@media (max-width: 884px) {
+@media (max-width: 885px) {
 	.article {
 		display: block;
+		margin-left: 180px;
+		margin-right: auto;
 	}
 	.box-left {
 		display: grid;
 		grid-template-columns: 1fr 1fr ;
-		/* justify-content: center; */
-		align-items: center;
+		justify-content: center;
 	}
 	.box-article-2 {
-		margin-left: 0px;
+		margin-left: 0;
 		margin-top: 50px;
+	}
+	.article-right {
+		margin-right: 300px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 428px) {
+	.article {
+		display: block;
+		margin-left: 74px;
+		margin-right: auto;
+	}
+	.box-left {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
+	.box-article-1{
+		margin-left: auto;
+		margin-top: 10px;
+	}
+	.box-article-2 {
+		margin-top: 20px;
+	}
+	.article-right {
+		width: 115%;
+		margin-left: 5px;
 	}
 }
 
@@ -1099,6 +1148,8 @@ a {
 
 /* footer start */
 
+/* footer start */
+
 #footer {
 	font-family: 'roboto', sans-serif;
 	margin: 0;
@@ -1113,7 +1164,9 @@ footer {
 	display: -o-flex;
 	display: flex;
 	flex-flow: row wrap;
-	padding: 50px;
+	/* padding: 50px; */
+	padding-top: 30px;
+	padding-bottom: 0;
 	color: #fff;
 	background-color: #011c39;
 	/* border-radius: 30px 30px 0px 0px; */
@@ -1125,6 +1178,7 @@ footer {
 
 .footer-left {
 	margin-right: 1.25em;
+	margin-left: 2em;
 	margin-bottom: 2em;
 }
 
@@ -1185,12 +1239,15 @@ footer {
 .footer-bottom {
 	text-align: center;
 	color: #999;
-	padding-top: 50px;
+	margin-top: 35px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	width: 100%;
+	background-color: rgb(0, 22, 43);
 }
 
 .footer-left p {
 	padding-right: 20%;
-	margin-bottom: 5px;
 }
 
 .footer-left a {
@@ -1216,7 +1273,7 @@ footer {
 
 @media only screen and (max-width:767px) {
 	.footer {
-		padding: 20px;
+		padding: 0;
 	}
 
 	.footer-left {
@@ -1245,7 +1302,6 @@ footer {
 }
 
 /* footer end */
-
 
 /* contact us start */
 
