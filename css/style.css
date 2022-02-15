@@ -577,8 +577,8 @@ a {
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
-    animation-duration: 40s; */
-}
+    animation-duration: 40s; 
+}*/
 
 
 /* @-webkit-keyframes zoomin {
@@ -1828,6 +1828,7 @@ footer {
 	display: flex;
 	flex-flow: row wrap;
 	/* padding: 50px; */
+	padding-top: 30px;
 	padding-bottom: 0;
 	color: #fff;
 	background-color: #011c39;
@@ -1903,7 +1904,7 @@ footer {
 	color: #999;
 	margin-top: 35px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 	width: 100%;
 	background-color: rgb(0, 22, 43);
 }
@@ -1935,7 +1936,7 @@ footer {
 
 @media only screen and (max-width:767px) {
 	.footer {
-		padding: 20px;
+		padding: 0;
 	}
 
 	.footer-left {
