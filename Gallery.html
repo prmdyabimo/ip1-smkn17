@@ -7,223 +7,126 @@
     <title>Gallery l IP1.co.id</title>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3cca8bd524.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-        
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    <!-- Gallery css -->
+    <link rel="stylesheet" href="css/Gallery.css">
+    <!-- w3school -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        .judul-gl{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            margin-top: 30px;
-        }
+    <!-- shorcut favicon -->
+    <link rel="shortcut icon" href="img/logoip1.jpg">
 
-        .judul-gl p{
-            font-size: 30px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        #Gallery-gl{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 150vh;
-            background:linear-gradient(-315deg, #ffffff 0%, #e7e7e7 74%);
-        }
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
 
-        .container-gl{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 1100px; 
-            margin-top: 90px;           
-        }
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        .container-gl .card{
-            position: relative;
-            width: 330px;
-            height: 350px;
-            margin: 15px;
-            overflow: hidden;
-            
-        }
-        .container-gl .card .imgbox{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background-color: white;
-        }
-        
-        .container-gl .card .content-box        
-        {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
-        }
+    <!-- testimoni swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
-        .container-gl .card .buttonbox-gl{
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            padding-top:30% ;
-            width: 100%;
-            height: 100%;
-        }
+	<!-- swiper cdn styling -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css"/>
 
-        .container-gl .card .buttonbox-gl .buttonwrap-gl{
-            content: '';
-            height: 15%;
-            width: 30%;
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            opacity: 0;
-            transform: translateY(-100px);
-            transition: 0.5s;
-            transition-delay: 0.1s;
-        }
+	<!-- font awesome bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" >
 
-        .container-gl .card:hover .buttonbox-gl .buttonwrap-gl{
-            /* -webkit-animation: fadeInTop 0.9s both;
-            -moz-animation: fadeInTop 0.9s both;
-            -o-animation: fadeInTop 0.9s both;
-            animation: fadeInTop 0.9s both; */
-            transition: 0.5s ;
-            transform: translateY(0);
-            opacity: 1;
-            transition-delay: 0.1s;
-        }
+	<!-- bootstrap cdnjs -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js">
 
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl
-        {
-            text-decoration: none;
-            width: 50%;
-            height: 100%;
-            /* background: yellow; */
-            /* text-decoration: none; */
-        }
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl a{
-            text-decoration: none;
-        }
-
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl,
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click2-gl
-        {
-            width: 100%;
-            height: 100%;
-            /* background-color: red; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-        }
-
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click1-gl{
-            background-color: rgb(218, 218, 218);
-            color: #000;
-        }
-
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl .click2-gl{
-            background-color: #F47B20;
-            color: #fff;
-        }
-
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl:hover .click1-gl{
-            transform: scaleX(-1) translateX(-1px);
-            transition: 0.4s;
-            background:#ff9d52;
-            color: white;
-        }
-        .container-gl .card .buttonbox-gl .buttonwrap-gl .btn-gl:hover .click2-gl{
-            transform: scaleX(-1) translateX(1px);
-            transition: 0.4s;
-            background-color: #fff;
-            color: #000;
-        }
-
-        .container-gl .card .content-box::before{
-            content: '';
-            position: absolute; 
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 75%;
-            background-color: #00000060;
-            transform: scaleX(0);
-            transition: transform 0.3s ease-in-out;
-            transform-origin: left;
-        }
-
-        .container-gl .card:hover .content-box::before{
-            transform: scaleX(1);
-            pointer-events: none;
-            transition: transform 0.3s ease-in-out;
-            transform-origin: left;
-        }
-
-        .container-gl .card .content-box .content-gl{
-            position: absolute;
-            bottom: 20%;
-            left: 0;
-            padding-left: 20px;
-            padding-bottom: 0;
-            /* z-index: 0; */
-            transition: 0.3s;
-            transform: translateX(-350px);
-        }
-
-        .container-gl .card:hover .content-box .content-gl{
-            transform: translateX(0px);
-        }
-
-        .container-gl .card .content-box .content-gl h2{
-            font-size: 1.1em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #fff;
-        }
-
-        .container-gl .card .content-box .content-gl p{
-            font-size: 0.9em;
-            line-height: 1em;
-            font-weight: 300;
-            color: #fff;
-        }
-        
-        
-        
-        /* selesai */
-    </style>
+	<!-- slick slider cdnjs -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!-- Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
-   
-    <section>
-        <div class="judul-gl">
-            <p>Gallery l Ip1.co.id</p> 
-        </div>
-    </section>
+
+    <!-- header starts -->
+	<header id="home1" class="header">
+
+		<div class="header1">
+			<div class="right">
+				<a href="Cekarea.html">Cek Area</a>
+				<a href="login.html">Login</a>
+				<a href="#"><i class="fas fa-mobile-screen-button fa-l"></i> IP1 App</i></a>
+				<!-- <a href="#">Advertise</a> -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<img src="img/logoip1.jpg">
+					<a href="#">Infinity Plus One</a>
+				</div>
+				<div class="open-nav-menu">
+					<span><i class="fas fa-bars"></i></span>
+				</div>
+				<!-- ketika dibuka background menjadi gelap -->
+				<div class="menu-overlay"></div>
+				<!-- navigation menu starts -->
+				<nav class="nav-menu">
+					<div class="close-nav-menu">
+						<span><i class="fas fa-close"></i></span>
+					</div>
+					<ul class="menu">
+						<li class="menu-item menu-item-has-children">
+							<a href="index.html" data-toggle="sub-menu">Home</i></a>
+						</li>
+						<li class="menu-item">
+							<a href="Aboutus.html">About Us</a>
+						</li>
+						<li class="menu-item">
+							<a href="#services">Services</a>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#" data-toggle="sub-menu">Product <i class="fas fa-sort-down"></i></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Home 1</a></li>
+								<li class="menu-item"><a href="#">Home 2</a></li>
+								<li class="menu-item"><a href="#">Home 3</a></li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="kontak.html">Contact</a>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="article.html" data-toggle="sub-menu">Artikel<i class="fas fa-sort-down"></i></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="Gallery.html">Gallery</a></li>
+							</ul>
+						</li>
+						<!-- <li class="menu-item">
+                            <a href="#">Cek Area</a>
+                        </li> -->
+						<li class="menu-item">
+							<a href="#">Carreer</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- navigation menu end -->
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+   <section class="gallery-wraper">
+    <div class="judul-gl">
+        <p>Gallery l Ip1.co.id</p> 
+    </div>  
 
     <section id="Gallery-gl">
+        
         <div class="container-gl">
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image1.jpg" alt="image1">
                 </div>
@@ -254,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image2.jpg" alt="image2">
                 </div>
@@ -285,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image3.jpg" alt="image3">
                 </div>
@@ -316,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image4.jpg" alt="image4">
                 </div>
@@ -347,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image5.jpg" alt="image5">
                 </div>
@@ -378,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image6.jpg" alt="image6">
                 </div>
@@ -409,7 +312,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image7.jpg" alt="image7">
                 </div>
@@ -440,7 +343,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image8.jpg" alt="image8">
                 </div>
@@ -471,7 +374,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-gl">
                 <div class="imgbox">
                     <img src="../img/image9.jpg" alt="image9">
                 </div>
@@ -503,5 +406,118 @@
             </div>
         </div>
     </section>
+   </section>
+
+   <section id="footer">
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="img/foto6.png" alt="">
+            <p><a href="">Menara Mandiri II, Lt. 18. <br> Jl. Jenderal Sudirman No. 54-55, Senayan, Kebayoran Baru, Jakarta
+                    Selatan 12190.</a></p>
+            <p><a href="">info@ip1.co.id</a></p>
+            <p><a href="">+628114455808</a></p>
+
+        </div>
+        <ul class="footer-right">
+            <li class="features">
+                <h2>Quick Links</h2>
+
+                <ul class="box">
+                    <li><a href="">List Link1</a></li>
+                    <li><a href="">List Link2</a></li>
+                    <li><a href="">List Link3</a></li>
+                    <li><a href="">List Link4</a></li>
+                    <li><a href="">List Link5</a></li>
+                    <li><a href="">List Link6</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2>Product</h2>
+
+                <ul class="box">
+                    <li><a href="">Theme Design</a></li>
+                    <li><a href="">Theme Design</a></li>
+                    <li><a href="">Theme Design</a></li>
+                    <li><a href="">Theme Design</a></li>
+                    <li><a href="">Theme Design</a></li>
+                </ul>
+            </li>
+
+            <li class="features">
+                <h2>Promo</h2>
+
+                <ul class="box">
+                    <li><a href="">list promo1</a></li>
+                    <li><a href="">list promo2</a></li>
+                    <li><a href="">list promo3</a></li>
+                    <li><a href="">list promo4</a></li>
+                    <li><a href="">list promo5</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2>Support</h2>
+
+                <ul class="box">
+                    <li><a href="">List Support1</a></li>
+                    <li><a href="">List Support2</a></li>
+                    <li><a href="">List Support3</a></li>
+                    <li><a href="">List Support4</a></li>
+                    <li><a href="">List Support5</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;InfinityPlusOne 2022</p>
+        </div>
+    </footer>
+</section>
+
+    <!-- slick slider cdnjs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiperjs -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- typejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+	<!-- swiper cdn -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+	<!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="js/jquery.hislide.js"></script>
+
+    <script>
+
+        var type = new Typed('.typing-text',{
+            strings: ['Welcome To IP1', 'Welcome To IP1', 'Welcome To IP1', 'Welcome To IP1'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+
+    </script>
+
+	<!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
