@@ -577,8 +577,8 @@ a {
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
-    animation-duration: 40s; 
-}*/
+    animation-duration: 40s; */
+}
 
 
 /* @-webkit-keyframes zoomin {
@@ -1469,7 +1469,7 @@ h4 {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 	/* opacity: 0.5; */
 	background-size: cover;
 }
@@ -1538,11 +1538,11 @@ h4 {
 }
 
 .container3 .box-container3 .box3 p {
-	font-size: 18px;
+	font-size: 17px;
 	color: #fff;
-	text-align: center;
+	text-align: justify;
 	font-weight: 200;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 
 /* .container3 .box-container3 .box3 .number {
