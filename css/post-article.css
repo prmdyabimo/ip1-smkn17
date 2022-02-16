@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:ital@1&display=swap');
+
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #articlebox-pa{
+            display: flex;
+        }
+        .container-gl{
+            width: 900px;
+            padding-bottom: 30px;
+            background:linear-gradient(-315deg, #ffffff 0%, #e7e7e7 74%);
+        }
+        .article-box{
+            width: 700px;
+            padding: 0 20px;
+            padding-top: 130px;
+            margin-left: auto;
+            margin-right: auto;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-box h1{
+            color: #F47B20;
+            /* text-align: center; */
+            padding-bottom: 20px;
+			font-weight: 700;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 29px;
+        }
+        .article-box img{
+            width: 670px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:30px ;
+			background-color:grey;
+        }
+        .article-box p{
+            text-align: justify;
+            margin-bottom: 20px;
+            color: rgb(97, 97, 97);
+            font-size: 17px;
+            font-weight: 400;
+        }
+        .article-box p b{
+            color: black;
+            font-size: 17px;
+        }
+        .article-box span{
+            text-align: left;
+            font-size: 16px;
+        }
+
+        /* !ARTICLE-RIGHT */
+.article-right {
+	display: block;
+	margin: 130px 10px;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.article-right h2 {
+	padding-bottom: 10px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+/* ?search */
+.search {
+	padding-bottom: 30px;
+}
+
+.search-box {
+	position: relative;
+	width: 100%;
+	height: 42px;
+	border: 4px solid #17285B;
+	padding: 0px 10px;
+	border-radius: 50px;
+}
+
+.search-container {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.inputSearch {
+	border: none;
+	height: 100%;
+	width: 100%;
+	padding: 0px 5px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.inputSearch:focus {
+	outline: none;
+}
+
+.fa-search {
+	font-size: 18px;
+}
+
+/* ?category */
+.categories {
+	display: flex;
+	border-bottom: 1px solid gray;
+	padding: 3px 0;
+}
+
+.categories a {
+	text-decoration: none;
+	color: #000;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.categories a:hover {
+	color: #F57B20;
+}
+
+.categories p {
+	padding-top: 10px;
+	padding-left: 230px;
+	color: #F57B20;
+}
+
+/* ?recent post */
+
+.recent-post h2 {
+	padding-top: 40px;
+}
+
+.recent-post img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.recent-img img:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.recent-img {
+	display: flex;
+	margin: 10px 0;
+}
+
+.txt {
+	font-size: 18px;
+	margin: 10px auto;
+}
+
+.txt p {
+	color: #F57B20;
+	padding-top: 20px;
+}
+
+.txt a {
+	text-decoration: none;
+	color: #000;
+}
+
+.txt a:hover {
+	color: gray;
+}
+
+/* ?tags */
+.tags h2 {
+	padding-top: 40px;
+}
+
+.tags-1 {
+	display: flex;
+}
+
+.tags-1 input {
+	width: 100px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 15px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border: none;
+}
+
+.tags-2 input {
+	width: 155px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 15px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border: none;
+}
+
+.tags-3 input {
+	width: 120px;
+	margin-right: 20px;
+	padding: 15px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border: none;
+}
+
+.btnTags input {
+	font-size: 15px;
+	color: #F57B20;
+}
+
+.btnTags input:hover {
+	background-color: #F57B20;
+	color: #fff;
+}
+
+/* !article */
