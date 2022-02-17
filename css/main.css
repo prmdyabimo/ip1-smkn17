@@ -2,8 +2,10 @@
 
 
 
+
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
   font-family: Poppins-Regular;
@@ -42,12 +44,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: 'Montserrat';
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -72,7 +74,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: 'Montserrat';
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -141,21 +143,21 @@ iframe {
 /*==================================================================
 [ Text ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   font-size: 15px;
   line-height: 1.6;
   color: #999999;
 }
 
 .txt3 {
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   font-size: 15px;
   line-height: 1.6;
   color: #F57B20;
@@ -188,6 +190,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  padding-bottom: 90px;
   background: #f2f2f2;
   
 }
@@ -250,7 +253,7 @@ iframe {
 .contact100-form-title {
   width: 100%;
   display: block;
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   font-size: 30px;
   color: #333333;
   line-height: 1.2;
@@ -279,7 +282,7 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   font-size: 12px;
   color: #555555;
   line-height: 1.5;
@@ -305,8 +308,9 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Poppins-Regular;
-  font-size: 18px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
   color: #666666;
   line-height: 1.2;
   padding: 0 25px;
@@ -391,9 +395,9 @@ textarea.input100 {
   border-radius: 2px;
   background: #030f7a;
 
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat';
   font-size: 12px;
-  color: #F57B20;
+  color: #ffffff;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -475,7 +479,7 @@ textarea.input100 {
   right: 2px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: 'Montserrat';
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
