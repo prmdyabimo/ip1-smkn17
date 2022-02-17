@@ -47,6 +47,10 @@
             width: 670px;
             height: 350px;
         }
+		.article-box .content-pa iframe{
+            width: 670px;
+            height: 350px;
+        }
         .article-box p{
             text-align: justify;
             margin-bottom: 20px;
@@ -252,6 +256,10 @@
 		width: 450px;
 		height: 240px;
 	}
+	.article-box .content-pa iframe{
+		width: 450px;
+		height:240px;
+	}
 	.article-box h1{
 		font-size: 18px;
 	}
@@ -317,6 +325,10 @@
 		height: 170px;
 	}
 	.article-box .content-pa .img{
+		width: 320px;
+		height: 170px;
+	}
+	.article-box .content-pa iframe{
 		width: 320px;
 		height: 170px;
 	}
