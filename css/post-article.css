@@ -42,6 +42,7 @@
 			margin-left: auto;
             margin-right: auto;
             margin-bottom:30px ;
+			overflow: hidden;
 		}
         .article-box .content-pa .img{
             width: 670px;
