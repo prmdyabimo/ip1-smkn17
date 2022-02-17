@@ -35,13 +35,17 @@
             margin-right: auto;
             font-size: 29px;
         }
-        .article-box img{
-            width: 670px;
-            height: 350px;
-            margin-left: auto;
+		.article-box .content-pa{
+			width: 670px;
+			height: 350px;
+			background-color:grey;
+			margin-left: auto;
             margin-right: auto;
             margin-bottom:30px ;
-			background-color:grey;
+		}
+        .article-box .content-pa .img{
+            width: 670px;
+            height: 350px;
         }
         .article-box p{
             text-align: justify;
@@ -222,4 +226,149 @@
 	color: #fff;
 }
 
-/* !article */
+
+@media (max-width: 1280px) {
+	.article-right {
+		margin-left: 40px;
+	}
+	.article-left {
+		margin-left: 60px;
+	}
+}
+
+
+@media (max-width: 885px) {
+	.container-gl{
+		width: 600px;
+	}
+	.article-box{
+		max-width: 500px;
+	}
+	.article-box .content-pa{
+		width: 450px;
+		height: 240px;
+	}
+	.article-box .content-pa .img{
+		width: 450px;
+		height: 240px;
+	}
+	.article-box h1{
+		font-size: 18px;
+	}
+	.article-box p{
+		font-size: 15px;
+	}
+	.article-box p b{
+		color: black;
+		font-size: 15px;
+	}
+	.article-box span{
+		text-align: left;
+		font-size: 15px;
+	}
+
+.article-right{
+	max-width: 250px;
+	margin-left: 0;
+}
+.categories p{
+	padding-left: 120px;
+}
+.txt{
+	font-size: 16px;
+	padding-left: 10px;
+}
+.recent-post h2{
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.tags h2{
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.btnTags input{
+	font-size: 13px;
+}
+.tags-1 input,
+.tags-2 input,
+.tags-3 input
+{
+	padding: 7px 3px;
+	margin-bottom: 15px;
+}
+
+}
+
+
+@media (max-width: 470px) {
+	#articlebox-pa{
+		flex-direction: column;
+		justify-items: center;
+	}
+	.container-gl{
+		width: 100%;
+		padding-bottom: 0;
+	}
+	.article-box{
+		max-width: 370px;
+	}
+	.article-box .content-pa{
+		width: 320px;
+		height: 170px;
+	}
+	.article-box .content-pa .img{
+		width: 320px;
+		height: 170px;
+	}
+	.article-box h1{
+		font-size: 18px;
+	}
+	.article-box p{
+		font-size: 14px;
+	}
+	.article-box p b{
+		color: black;
+		font-size: 14px;
+	}
+	.article-box span{
+		text-align: left;
+		font-size: 14px;
+	}
+
+.article-right{
+	max-width: 340px;
+	margin-left: auto;
+	margin-left: auto;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+.categories p{
+	padding-left: 210px;
+}
+.txt{
+	font-size: 16px;
+	padding-left: 10px;
+}
+.recent-post h2{
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.tags h2{
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.btnTags input{
+	font-size: 13px;
+}
+.tags-1 input,
+.tags-2 input,
+.tags-3 input
+{
+	padding: 7px 3px;
+	margin-bottom: 15px;
+}
+
+}
+
+
+
