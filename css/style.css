@@ -66,7 +66,8 @@ body.hidden-scrolling {
 
 
 .container {
-	max-width: 1400px;
+	/* max-width: 1400px; */
+  min-width: 100%;
 	/* background-color: red; */
 	/* margin: auto; */
 	font-family: 'Montserrat',
@@ -201,12 +202,14 @@ a {
 }
 
 .header-main {
+  /* position: fixed; */
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 	min-width: 100%;
 	margin: 30px -30px;
+	/* margin-top: 30px; */
 	padding: 10px 0px;
 	/* border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px; */
@@ -217,10 +220,10 @@ a {
 	text-decoration: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.header-main {
 		min-width: 100%;
-		/* margin: 10px; */
+		/* margin: 30px -30px; */
 	}
 }
 
@@ -1904,7 +1907,7 @@ footer {
 	color: #999;
 	margin-top: 35px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	/* padding-bottom: 5px; */
 	width: 100%;
 	background-color: rgb(0, 22, 43);
 }
