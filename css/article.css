@@ -807,12 +807,13 @@ a {
 		display: grid;
 		grid-template-columns: 1fr 1fr ;
 		justify-content: center;
+		padding: 100px;
 	}
   .box-article {
     margin: auto;
   }
 	.box-article-2 {
-		margin: 30px auto;
+		margin: auto;
 	}
 	.article-right {
 		margin: 100px auto;
