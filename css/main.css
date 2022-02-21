@@ -36,6 +36,11 @@
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
+/* !HIGHLIGHT */
+.highlight {
+  border-bottom: 2px solid #F57B20;
+}
+
 * {
 	margin: 0px; 
 	padding: 0px; 
