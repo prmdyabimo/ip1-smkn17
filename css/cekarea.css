@@ -92,7 +92,7 @@
 
 .map-container{
     font-family: 'Montserrat',sans-serif;
-    background:#011c39 ;
+    background:rgb(0, 22, 43) ;
     border-radius: 20px 20px 0 0;
     margin-top: -20px;
     height: fit-content;
@@ -124,7 +124,7 @@
 .map-wrapper-ca{
     display:flex;
     justify-content: center;
-    background-color: #011c39;
+    /* background-color: #424242; */
     width: fit-content;
     height: fit-content;
 }
