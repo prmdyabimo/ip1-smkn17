@@ -1,7 +1,6 @@
 
 
 
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -51,9 +50,6 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.header-main{
-  margin: 30px -16px; 
-}
 
 /*---------------------------------------------*/
 a {
