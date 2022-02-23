@@ -62,7 +62,7 @@ body.hidden-scrolling {
     box-sizing: border-box;
 }
 
-.container {
+.container {    
     /* max-width: 1400px; */
     min-width: 100%;
     /* background-color: red; */
@@ -91,7 +91,7 @@ a {
 .header {
     position: fixed;
     /* background-color: #E88033; */
-    width: 100%;
+    min-width: 100%;
     left: 0;
     top: 0;
     z-index: 99;
@@ -137,6 +137,12 @@ a {
 
 
 /* responsive header1 */
+
+@media (max-width: 1280px) {
+    .container{
+        min-width: 100%;
+    }
+}
 
 @media (max-width: 991px) {
     .header1 {
@@ -1377,9 +1383,9 @@ h4 {
     margin: 0;
     padding: 30px 50px;
     /* background: #F57B20; */
-    
     background-image: url(../img/foto1.png);
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     z-index: -2;
     /* padding-bottom: 80px; */
