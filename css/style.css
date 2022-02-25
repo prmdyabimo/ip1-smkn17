@@ -141,7 +141,7 @@ a {
 
 @media (max-width: 1280px) {
     .container {
-        min-width: 100%;
+        width: 100%;
     }
 }
 
@@ -149,7 +149,7 @@ a {
     .header1 {
         font-size: 12px;
         font-weight: 600;
-        width: 100%;
+        /* width: 100%; */
         padding: 10px;
     }
 
@@ -160,11 +160,6 @@ a {
     }
 }
 
-@media (max-width: 428px) {
-    .header {
-        width: 100%;
-    }
-}
 
 
 /* .header1 .right i {
