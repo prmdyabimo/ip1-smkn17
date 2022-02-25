@@ -161,15 +161,7 @@ a {
 }
 
 @media (max-width: 428px) {
-    .header1 {
-        width: 100%;
-        padding: 10px;
-    }
-    .header-main {
-        width: 100%;
-        margin: auto;
-    }
-    .container {
+    .header {
         width: 100%;
     }
 }
