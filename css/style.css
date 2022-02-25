@@ -159,6 +159,9 @@ a {
 }
 
 @media (max-width: 428px) {
+    .header {
+        width: 100%;
+    }
     .header1 {
         width: 100%;
         padding: 10px;
