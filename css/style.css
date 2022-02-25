@@ -40,6 +40,7 @@
 html {
     scroll-behavior: smooth;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 body {
@@ -182,7 +183,7 @@ a {
 
 .header-main.sticky {
     background: #fff;
-    margin: -15px -30px;
+    /* margin: -15px -30px; */
     min-width: 100%;
 }
 
@@ -219,7 +220,7 @@ a {
     justify-content: space-between;
     /* align-items: center; */
     min-width: 100%;
-    margin: 30px -30px;
+    /* margin: 30px -30px; */
     /* margin-top: 30px; */
     padding: 10px 0px;
     /* border-top-left-radius: 50px;
