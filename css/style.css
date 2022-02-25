@@ -139,17 +139,16 @@ a {
 
 /* responsive header1 */
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
     .container {
         min-width: 100%;
     }
-}
+} */
 
 @media (max-width: 991px) {
     .header1 {
         font-size: 12px;
         font-weight: 600;
-        width: 100%;
         padding: 10px;
     }
 
@@ -160,16 +159,6 @@ a {
     }
 }
 
-@media (max-width: 428px) {
-    .header {
-        width: 50%;
-    }
-
-    .header1 {
-        width: 50%;
-        padding: 10px;
-    }
-}
 
 
 /* .header1 .right i {
@@ -1372,6 +1361,12 @@ h4 {
 
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 428px) {
+    .slider9 {
+        overflow-x: hidden;
+    }
 }
 
 .slider9>.client h2 {
