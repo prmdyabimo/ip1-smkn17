@@ -160,10 +160,10 @@ a {
 
 @media (max-width: 468px) {
     .header1 {
-        width: 10%;
+        width: 70%;
     }
     .header-main {
-        width: 50%;
+        min-width: 70%;
     }
 }
 
